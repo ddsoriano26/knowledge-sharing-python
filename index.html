@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>Python KS</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/black.css">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<style>
+		.small li {
+			font-size: 28px;
+			padding: 5px;
+			margin: 0;
+		}
+		.small code {
+			font-size: 18px;
+		}
+		.small p {
+			font-size: 18px;
+		}
+		.small-li li {
+			font-size: 18px;
+		}
+		.medium code {
+			font-size: 20px;
+		}
+		.medium-p p {
+			font-size: 28px;
+		}
+		.medium-code code {
+			font-size: 28px;
+		}
+		.small-code code {
+			font-size: 18px;
+		}
+		.smallest-code code {
+			font-size: 14px;
+		}
+	</style>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section data-markdown="slides/title.md"></section>
+				<section>
+					<section data-markdown="slides/what-is-python.md"></section>
+					<section data-markdown="slides/python-is-a-language.md"></section>
+					<section data-markdown="slides/python-is-used-in.md"></section>
+					<section data-markdown="slides/python-2.7-vs-3.x.md" class="small"></section>
+				</section>
+				<section data-markdown="slides/basic-syntax.md"></section>
+				<section>
+					<section data-markdown="slides/variables.md"></section>
+					<section data-markdown="slides/variable-declarations-and-types.md"></section>
+					<section data-markdown="slides/variable-conversions.md"></section>
+					<section data-markdown="slides/arrays.md" class="small-code small-li"></section>
+					<section data-markdown="slides/tuples.md" class="medium"></section>
+					<section data-markdown="slides/dictionaries.md"></section>
+				</section>
+				<section>
+					<section data-markdown="slides/operators.md"></section>
+					<section data-markdown="slides/augmented-ops.md"></section>
+					<section data-markdown="slides/bitwise-ops.md" class="medium-p"></section>
+					<section data-markdown="slides/logical-ops.md"></section>
+					<section data-markdown="slides/conditional-ops.md" class="small"></section>
+					<section data-markdown="slides/iterators.md" class="small"></section>
+					<section data-markdown="slides/iterator-keywords.md" class="small"></section>
+				</section>
+				<section data-markdown="slides/classes.md" class="small-li smallest-code"></section>
+				<section>
+					<section data-markdown="slides/functions.md"></section>
+					<section data-markdown="slides/using-functions.md" class="small-code"></section>
+					<section data-markdown="slides/args-vs-kwargs.md" class="small smallest-code small-li"></section>
+				</section>
+				<section data-markdown="slides/try-except.md"></section>
+				<section>
+					<section data-markdown="slides/developing-with-python.md"></section>
+					<section data-markdown="slides/pip.md"></section>
+					<section data-markdown="slides/virtual-environments.md"></section>
+					<section data-markdown="slides/running-scripts.md" class="medium-p medium-code"></section>
+					<section data-markdown="slides/threading.md"></section>
+				</section>
+				<section>
+					<section data-markdown="slides/applications.md"></section>
+					<section data-markdown="slides/reco-modules.md"></section>
+					<section data-markdown="slides/examples.md"></section>
+				</section>
+				<section data-markdown="slides/references.md"></section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+				navigationMode: "default",
+				pdfSeparateFragments: false,
+				hideCursorTime: 2000,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
